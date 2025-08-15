@@ -12,7 +12,12 @@
             {{--  右側に設置するアイコン  --}}
             <div class="flex space-x-2 justify-end">
                 <button class="bg-white text-[#3EB489] font-bold py-1 px-3 rounded hover:bg-gray-100">Home</button>
-                <button class="bg-white text-[#3EB489] font-bold py-1 px-3 rounded hover:bg-gray-100">Activity</button>
+                {{--  TODO  コントローラーを用いたい  --}}
+                <a href="{{url('/activity')}}">
+                    <button class="bg-white text-[#3EB489] font-bold py-1 px-3 rounded hover:bg-gray-100">
+                        Activity
+                    </button>
+                </a>
                 <button class="bg-white text-[#3EB489] font-bold py-1 px-3 rounded hover:bg-gray-100">Contact</button>
                 <button class="flex items-center">
                     {{--  三点リーダーfigmaから読み込み  --}}
