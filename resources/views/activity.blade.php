@@ -3,11 +3,9 @@
         <title>最近のアクティビティ</title>
     </head>
     <body>
-        <h1>私について</h1>
-        <p>これは私のページです。</p>
-        <p>私の名前は{{$name ?? "名無し"}}です。</p>
-        <p>私の年齢は{{$age ?? "年齢未詳"}}です。</p>
-        <button onclick="location.href='/'">私の好きなものはこちらです</button>
+        <div class="text-[3vw] text-[#3EB489] font-bold py-3 px-3">
+        <h1>下記の研究活動を行っています。</h1>
+        </div>
 
         <!-- 画像＋リンク＋キャプション -->
         <div style="text-align: center;">
