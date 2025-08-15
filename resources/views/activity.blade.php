@@ -13,7 +13,7 @@
         <div style="text-align: center;">
             <figure style="display: inline-block;">
                 <a href="https://arxiv.org/abs/2507.12886" target="_blank">
-                    <img src="{{ asset('images/abst_image.png') }}" alt="サンプル画像" style="max-width:300px; border-radius:8px;">
+                    <img src="{{ asset('images/abst_image.png') }}" alt="サンプル画像" style="max-width:500px; border-radius:8px;">
                 </a>
                 <figcaption style="margin-top:8px; color:#555;">
                     クリックするとarXivに移動します。
