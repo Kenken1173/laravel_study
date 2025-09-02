@@ -11,7 +11,11 @@
             </div>
             {{--  右側に設置するアイコン  --}}
             <div class="flex space-x-2 justify-end">
-                <button class="bg-white text-[#3EB489] font-bold py-1 px-3 rounded hover:bg-gray-100">Home</button>
+                <a href="{{url('/')}}">
+                    <button class="bg-white text-[#3EB489] font-bold py-1 px-3 rounded hover:bg-gray-100">
+                        Home
+                    </button>
+                </a>
                 {{--  TODO  コントローラーを用いたい  --}}
                 <a href="{{url('/activity')}}">
                     <button class="bg-white text-[#3EB489] font-bold py-1 px-3 rounded hover:bg-gray-100">
@@ -37,7 +41,7 @@
             <svg id="bg-svg" width="1000" height="1000" viewBox="0 0 480 480" fill="none"
                     style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;">
                 <text x="50%" y="15%" text-anchor="middle" fill="#E0E0E0" font-size="40" font-family="Noto Sans" font-weight="bold">
-                    Kengo Anzai Home page
+                    Kengo Anzai&#39;s Home page
                 </text>
             </svg>
         </div>
