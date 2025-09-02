@@ -19,9 +19,31 @@
                 </text>
             </svg>
             <div class="ml-8">
-                <p class="text-3xl font-bold text-red-500 mb-2">ここに具体的な内容を書く予定です</p>
+                <p id="intro-text" class="text-3xl font-bold text-red-500 mb-2">ここに具体的な内容を書く予定です</p>
                 <p>ちょっとした内容</p>
             </div>
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const text = document.querySelector("#intro-text");
+            const textContent = text.textContent;
+            text.innerHTML = textContent
+                .split("")
+                .map(char => `<span class="char" style="opacity:0">${char}</span>`)
+                .join("");
+
+            anime({
+                targets: "#intro-text .char",
+                opacity: [0, 1],
+                translateY: [20, 0],
+                easing: "easeOutExpo",
+                duration: 750,
+                delay: (el, i) => 50 * i
+            });
+        });
+        </script>
+
     </body>
 </x-header>
